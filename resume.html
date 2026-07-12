@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Devakkumar Sheth — Resume</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Inter', system-ui, sans-serif;
+      font-size: 10.5pt;
+      line-height: 1.45;
+      color: #1a1a2e;
+      background: #f0f0f5;
+      padding: 24px;
+    }
+
+    .page {
+      max-width: 800px;
+      margin: 0 auto;
+      background: #fff;
+      padding: 40px 48px;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+    }
+
+    .toolbar {
+      max-width: 800px;
+      margin: 0 auto 16px;
+      display: flex;
+      gap: 10px;
+      justify-content: flex-end;
+    }
+
+    .toolbar a, .toolbar button {
+      font-family: inherit;
+      font-size: 0.85rem;
+      font-weight: 600;
+      padding: 8px 16px;
+      border-radius: 8px;
+      text-decoration: none;
+      cursor: pointer;
+      border: none;
+    }
+
+    .btn-back { background: #fff; color: #333; border: 1px solid #ddd; }
+    .btn-print { background: #6366f1; color: #fff; }
+
+    header { border-bottom: 2px solid #6366f1; padding-bottom: 16px; margin-bottom: 18px; }
+    h1 { font-size: 22pt; font-weight: 700; letter-spacing: -0.5px; }
+    .subtitle { font-size: 11pt; color: #6366f1; font-weight: 600; margin-top: 4px; }
+    .contact { margin-top: 10px; font-size: 9pt; color: #555; display: flex; flex-wrap: wrap; gap: 6px 16px; }
+    .contact a { color: #6366f1; text-decoration: none; }
+
+    h2 {
+      font-size: 10pt;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1.2px;
+      color: #6366f1;
+      border-bottom: 1px solid #e8e8f0;
+      padding-bottom: 4px;
+      margin: 18px 0 10px;
+    }
+
+    .summary { color: #444; font-size: 10pt; }
+
+    .entry { margin-bottom: 14px; }
+    .entry-header { display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 4px; }
+    .entry-title { font-weight: 700; font-size: 10.5pt; }
+    .entry-date { font-size: 9pt; color: #777; white-space: nowrap; }
+    .entry-org { font-size: 9.5pt; color: #6366f1; font-weight: 500; margin-bottom: 4px; }
+    .entry ul { padding-left: 16px; margin-top: 4px; }
+    .entry li { font-size: 9.5pt; color: #444; margin-bottom: 3px; }
+
+    .project { margin-bottom: 12px; }
+    .project h3 { font-size: 10pt; font-weight: 700; }
+    .project .tech { font-size: 8.5pt; color: #777; font-style: italic; margin: 2px 0 4px; }
+    .project p, .project li { font-size: 9.5pt; color: #444; }
+
+    .skills-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 6px 20px; }
+    .skill-row { font-size: 9.5pt; }
+    .skill-row strong { color: #333; }
+
+    .edu-row { display: flex; justify-content: space-between; margin-bottom: 8px; font-size: 9.5pt; }
+    .edu-row .grades { color: #777; white-space: nowrap; }
+
+    @media print {
+      body { background: #fff; padding: 0; }
+      .toolbar { display: none; }
+      .page { box-shadow: none; padding: 0; max-width: 100%; }
+      @page { margin: 1.2cm 1.5cm; }
+    }
+  </style>
+</head>
+<body>
+  <div class="toolbar">
+    <a href="index.html" class="btn-back">← Back to Portfolio</a>
+    <button class="btn-print" onclick="window.print()">Print / Save as PDF</button>
+    <a href="Devakkumar_Sheth_Resume.pdf" class="btn-print js-download-resume">Download PDF</a>
+  </div>
+  <script>
+    document.querySelector('.js-download-resume')?.addEventListener('click', async (e) => {
+      e.preventDefault();
+      for (const file of ['Devakkumar_Sheth_Resume.pdf', 'resume.pdf']) {
+        try {
+          const r = await fetch(file, { cache: 'no-store' });
+          if (!r.ok) continue;
+          const blob = await r.blob();
+          const url = URL.createObjectURL(blob);
+          const a = document.createElement('a');
+          a.href = url;
+          a.download = 'Devakkumar_Sheth_Resume.pdf';
+          a.click();
+          URL.revokeObjectURL(url);
+          return;
+        } catch {}
+      }
+      alert('PDF not found. Use "Print / Save as PDF" instead.');
+    });
+  </script>
+
+  <div class="page">
+    <header>
+      <h1>DEVAKKUMAR SHETH</h1>
+      <p class="subtitle">Associated Software Developer · Backend</p>
+      <div class="contact">
+        <span>📞 +91 9408999494</span>
+        <span>✉️ <a href="mailto:223csd11@svitvasad.ac.in">223csd11@svitvasad.ac.in</a></span>
+        <span>📍 Vadodara, Gujarat, India</span>
+        <span>🔗 <a href="https://github.com/Shethdevak">github.com/Shethdevak</a></span>
+        <span>🔗 <a href="https://www.linkedin.com/in/devakkumar-sheth-7159313a0">linkedin.com/in/devakkumar-sheth-7159313a0</a></span>
+      </div>
+    </header>
+
+    <h2>Professional Summary</h2>
+    <p class="summary">
+      Goal-driven B.E. Computer Science &amp; Design graduate with strong AI/ML foundations and hands-on experience as a software developer. Currently working as a backend developer on a Frappe/ERPNext healthcare ERP at Digiflux Technologies. Skilled in building full-stack web &amp; mobile applications, REST APIs, data scraping pipelines, and production dashboards. Proficient in Python and JavaScript with experience across Node.js, React, React Native, and Frappe Framework.
+    </p>
+
+    <h2>Experience</h2>
+
+    <div class="entry">
+      <div class="entry-header">
+        <span class="entry-title">Associated Software Developer — Backend</span>
+        <span class="entry-date">Jun 2026 — Present</span>
+      </div>
+      <div class="entry-org">Digiflux Technologies Private Limited</div>
+      <ul>
+        <li>Backend developer on FRS TB Screening — custom Frappe/ERPNext ERP for tuberculosis screening management</li>
+        <li>Built mobile REST APIs for household enumeration, assessments, screening campaigns &amp; specimen workflows</li>
+        <li>Developed X-Ray (Qure AI), sputum/molecular testing, and QR-based identification flows</li>
+        <li>Implemented geospatial target area detection (Shapely), Nikshay registry integration, DICOM upload</li>
+      </ul>
+    </div>
+
+    <div class="entry">
+      <div class="entry-header">
+        <span class="entry-title">Software Developer Intern</span>
+        <span class="entry-date">Dec 2025 — Jun 2026</span>
+      </div>
+      <div class="entry-org">Digiflux Technologies Private Limited</div>
+      <ul>
+        <li>Built &amp; deployed full-stack apps: Eventix, DebugPilot, MarketIQ, SeatNova (Vercel)</li>
+        <li>Developed production REST APIs with Node.js/Express and MongoDB for IT asset management</li>
+        <li>Created cross-platform mobile apps with React Native (Expo) and Kotlin (Android WebView)</li>
+        <li>Built multi-site Python scrapers for e-commerce platforms (OhPolly, LuxuryCloset, LevelShoes)</li>
+        <li>Designed ComfyUI workflows for AI image &amp; video generation; built e-commerce front-ends for Mixa</li>
+      </ul>
+    </div>
+
+    <div class="entry">
+      <div class="entry-header">
+        <span class="entry-title">AI Summer Internship</span>
+        <span class="entry-date">Jun 2025 · 2 Weeks</span>
+      </div>
+      <div class="entry-org">IBM SkillsBuild · IBM × AICTE × FutureSkills Prime</div>
+      <ul>
+        <li>Machine learning workflows, ethical AI, and problem-solving using AI tools</li>
+      </ul>
+    </div>
+
+    <h2>Key Projects</h2>
+
+    <div class="project">
+      <h3>FRS TB Screening ERP — Healthcare ERP (Current)</h3>
+      <p class="tech">Frappe · ERPNext · Python · MariaDB · Redis · Shapely · Qure AI</p>
+      <ul>
+        <li>40+ custom DocTypes; mobile APIs for Flutter app; configurable screening workflows</li>
+        <li>QR code PDF generation, geospatial mapping, Nikshay national TB registry integration</li>
+      </ul>
+    </div>
+
+    <div class="project">
+      <h3>Eventix — Event Booking Platform (Web + Mobile)</h3>
+      <p class="tech">Node.js · Express · MongoDB · React · React Native · Kotlin · Razorpay · Vercel</p>
+      <ul>
+        <li>JWT auth, RBAC, seat locking with idempotency, Razorpay payments, cron-based booking expiry</li>
+        <li>Three clients: React web SPA, React Native app, Kotlin Android WebView wrapper</li>
+      </ul>
+    </div>
+
+    <div class="project">
+      <h3>Digiflux AssetTrack — IT Asset Management</h3>
+      <p class="tech">Node.js · MongoDB · Next.js 16 · TypeScript · Tailwind · node-cron</p>
+      <ul>
+        <li>Production system for office; RBAC, automated alerts, QR codes, 32/32 API tests passed</li>
+      </ul>
+    </div>
+
+    <div class="project">
+      <h3>DebugPilot · MarketIQ · SeatNova · Multi-Platform Scraper · Railway Dashboard</h3>
+      <p class="tech">Next.js · React Native · Flask · PostgreSQL · Python · React · Google Sheets API</p>
+      <ul>
+        <li>API debugger (Next.js), AI marketplace with ML pricing, venue layout builder (Three.js)</li>
+        <li>E-commerce scrapers for Mixa; government railway dashboards with dynamic Excel data</li>
+      </ul>
+    </div>
+
+    <div class="project">
+      <h3>AI World — Gesture-Based AI Control (College)</h3>
+      <p class="tech">Python · OpenCV · MediaPipe · NumPy</p>
+      <ul>
+        <li>Hands-free computer control via webcam gestures; virtual mouse and volume control</li>
+      </ul>
+    </div>
+
+    <h2>Education</h2>
+    <div class="edu-row">
+      <div><strong>B.E. Computer Science &amp; Design</strong> — SVIT Vasad (GTU) · 2023–2026</div>
+      <div class="grades">CGPA: 8.29 · CPI: 7.74</div>
+    </div>
+    <div class="edu-row">
+      <div><strong>Diploma — Information Technology</strong> — Sigma Group of Institutes (GTU) · 2020–2023</div>
+      <div class="grades">CGPA: 7.57 · CPI: 8.07</div>
+    </div>
+
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-row"><strong>Languages:</strong> Python, JavaScript, TypeScript, Java, Kotlin, C, C++</div>
+      <div class="skill-row"><strong>Backend:</strong> Node.js, Express, Frappe, ERPNext, Flask, REST API, JWT, RBAC</div>
+      <div class="skill-row"><strong>Frontend:</strong> React, Next.js, React Native, Tailwind CSS, Three.js</div>
+      <div class="skill-row"><strong>Databases:</strong> MongoDB, PostgreSQL, MariaDB, Redis, SQLite</div>
+      <div class="skill-row"><strong>AI/ML:</strong> NumPy, Pandas, Scikit-learn, TensorFlow, OpenCV, MediaPipe</div>
+      <div class="skill-row"><strong>Tools:</strong> Git, GitHub, GitLab, Vercel, Docker, Postman, ComfyUI</div>
+    </div>
+
+    <h2>Languages</h2>
+    <p class="summary">Gujarati (Fluent) · Hindi (Fluent) · English (Intermediate)</p>
+  </div>
+</body>
+</html>

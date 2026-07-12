@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Devakkumar Sheth — Associated Software Developer at Digiflux Technologies. Full-stack developer building web, mobile, and AI-powered applications." />
+  <title>Devakkumar Sheth | Software Developer</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="favicon.ico" sizes="any" />
+  <link rel="icon" href="favicon-32x32.png" type="image/png" sizes="32x32" />
+  <link rel="icon" href="favicon-16x16.png" type="image/png" sizes="16x16" />
+  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+  <meta name="theme-color" content="#6366f1" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Syne:wght@500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div class="bg-glow bg-glow--1" aria-hidden="true"></div>
+  <div class="bg-glow bg-glow--2" aria-hidden="true"></div>
+
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#hero" class="nav__logo">
+        <span class="nav__logo-mark">DS</span>
+        <span class="nav__logo-text">Devakkumar Sheth</span>
+      </a>
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav__links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="Devakkumar_Sheth_Resume.pdf" class="nav__resume js-download-resume">Resume</a></li>
+        <li><a href="#contact" class="nav__cta">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="hero">
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <p class="hero__eyebrow reveal">Currently building ERP systems at Digiflux</p>
+          <h1 class="hero__title reveal">
+            Hi, I'm <span class="gradient-text">Devakkumar Sheth</span>
+          </h1>
+          <p class="hero__role reveal">Associated Software Developer · Backend</p>
+          <p class="hero__subtitle reveal">
+            I build full-stack web &amp; mobile applications — and currently work as a <strong>backend developer</strong> on an ERP-based TB Screening platform built with Frappe &amp; ERPNext. Previously built event booking systems, asset management, AI marketplaces, and multi-platform scrapers at <strong>Digiflux Technologies</strong>.
+          </p>
+          <div class="hero__actions reveal">
+            <a href="#projects" class="btn btn--primary">View My Work</a>
+            <a href="Devakkumar_Sheth_Resume.pdf" class="btn btn--resume js-download-resume">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+              Download Resume
+            </a>
+            <a href="#contact" class="btn btn--ghost">Get in Touch</a>
+            <a href="https://github.com/Shethdevak" target="_blank" rel="noopener" class="btn btn--ghost btn--icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.395-.135-.345-.72-1.395-1.23-1.665-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+              GitHub
+            </a>
+            <a href="https://www.linkedin.com/in/devakkumar-sheth-7159313a0" target="_blank" rel="noopener" class="btn btn--ghost btn--icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 114.126 0 2.063 2.063 0 01-2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              LinkedIn
+            </a>
+          </div>
+          <div class="hero__stats reveal">
+            <div class="stat">
+              <span class="stat__num">13+</span>
+              <span class="stat__label">Projects Built</span>
+            </div>
+            <div class="stat">
+              <span class="stat__num">6 mo</span>
+              <span class="stat__label">Internship</span>
+            </div>
+            <div class="stat">
+              <span class="stat__num">3</span>
+              <span class="stat__label">Platforms (Web · Mobile · API)</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero__visual reveal">
+          <div class="profile-card">
+            <div class="profile-card__avatar">
+              <span>DS</span>
+            </div>
+            <div class="profile-card__info">
+              <h3>Devakkumar Sheth</h3>
+              <p>Software Developer</p>
+              <div class="profile-card__tags">
+                <span>Backend</span>
+                <span>Frappe</span>
+                <span>ERPNext</span>
+                <span>Python</span>
+                <span>Node.js</span>
+              </div>
+            </div>
+            <div class="profile-card__company">
+              <span class="dot dot--green"></span>
+              Digiflux Technologies Pvt. Ltd.
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="#about" class="scroll-hint" aria-label="Scroll down">
+        <span></span>
+      </a>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="section__tag">About Me</span>
+          <h2>From AI/ML foundations to production software</h2>
+        </div>
+        <div class="about-grid reveal">
+          <div class="about-card about-card--main">
+            <p>
+              Enthusiastic and goal-driven <strong>B.E. Computer Science &amp; Design</strong> graduate with a strong foundation in Artificial Intelligence, Machine Learning, and Deep Learning from college — and hands-on experience building real-world software as a developer.
+            </p>
+            <p>
+              During my internship and now as a full-time <strong>Associated Software Developer</strong> at Digiflux Technologies, I've built and deployed full-stack web applications, cross-platform mobile apps, REST APIs, data scraping pipelines, and production dashboards.
+            </p>
+            <p>
+              Currently, I'm working as a <strong>backend developer</strong> on <strong>FRS TB Screening</strong> — a custom ERP system built on Frappe Framework &amp; ERPNext for tuberculosis screening management, with mobile APIs, workflow engines, and integrations with Qure AI and Nikshay.
+            </p>
+            <p>
+              Passionate about building intelligent systems and intuitive UI/UX that solve real problems — whether it's healthcare ERP workflows, seat locking for event bookings, or scraping products across e-commerce platforms for price comparison.
+            </p>
+          </div>
+          <div class="about-card about-card--highlight">
+            <h3>Quick Facts</h3>
+            <ul class="facts-list">
+              <li>
+                <span class="facts-list__icon">📍</span>
+                <div>
+                  <strong>Location</strong>
+                  <span>Vadodara, Gujarat, India</span>
+                </div>
+              </li>
+              <li>
+                <span class="facts-list__icon">🏢</span>
+                <div>
+                  <strong>Current Role</strong>
+                  <span>Backend Developer — Digiflux Technologies</span>
+                </div>
+              </li>
+              <li>
+                <span class="facts-list__icon">🩺</span>
+                <div>
+                  <strong>Current Project</strong>
+                  <span>FRS TB Screening ERP (Frappe / ERPNext)</span>
+                </div>
+              </li>
+              <li>
+                <span class="facts-list__icon">🎓</span>
+                <div>
+                  <strong>Education</strong>
+                  <span>B.E. CSD — SVIT Vasad (GTU)</span>
+                </div>
+              </li>
+              <li>
+                <span class="facts-list__icon">🌐</span>
+                <div>
+                  <strong>Languages</strong>
+                  <span>Hindi · Gujarati · English</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="section section--alt" id="experience">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="section__tag">Experience</span>
+          <h2>Where I've worked &amp; learned</h2>
+        </div>
+        <div class="timeline">
+          <article class="timeline__item reveal">
+            <div class="timeline__marker"></div>
+            <div class="timeline__card">
+              <div class="timeline__meta">
+                <span class="badge badge--current">Current</span>
+                <time>Jun 2026 — Present</time>
+              </div>
+              <h3>Associated Software Developer — Backend</h3>
+              <p class="timeline__company">Digiflux Technologies Private Limited</p>
+              <p>Full-time backend developer on <strong>FRS TB Screening</strong>, a custom Frappe / ERPNext ERP for tuberculosis screening management. Building DocTypes, REST APIs for mobile apps, workflow engines, geospatial target areas, and integrations with Qure AI (X-Ray) and Nikshay (national TB registry).</p>
+              <ul>
+                <li>Developed mobile APIs for household enumeration, assessments, screening campaigns &amp; specimen workflows</li>
+                <li>Built backend for X-Ray, sputum/molecular testing, and QR-based person identification flows</li>
+                <li>Implemented geospatial target area detection with Shapely (point-in-polygon)</li>
+                <li>Integrated DICOM upload, PDF QR print sheets, and Nikshay interoperability</li>
+              </ul>
+            </div>
+          </article>
+          <article class="timeline__item reveal">
+            <div class="timeline__marker"></div>
+            <div class="timeline__card">
+              <div class="timeline__meta">
+                <span class="badge">Internship</span>
+                <time>Dec 2025 — Jun 2026</time>
+              </div>
+              <h3>Software Developer Intern</h3>
+              <p class="timeline__company">Digiflux Technologies Private Limited</p>
+              <ul>
+                <li>Built and deployed full-stack web &amp; mobile apps from scratch (Eventix, DebugPilot, MarketIQ, SeatNova)</li>
+                <li>Developed production REST APIs with Node.js/Express and MongoDB for asset management</li>
+                <li>Created cross-platform mobile apps with React Native (Expo) and Kotlin (Android WebView)</li>
+                <li>Built multi-site Python scrapers for e-commerce platforms (OhPolly, LuxuryCloset, LevelShoes)</li>
+                <li>Designed ComfyUI workflows for AI image &amp; video generation</li>
+                <li>Built front-end e-commerce prototypes (Zovio, Cartify) for Mixa platform testing</li>
+              </ul>
+            </div>
+          </article>
+          <article class="timeline__item reveal">
+            <div class="timeline__marker"></div>
+            <div class="timeline__card">
+              <div class="timeline__meta">
+                <span class="badge badge--cert">Certification</span>
+                <time>Jun 2025 · 2 Weeks</time>
+              </div>
+              <h3>AI Summer Internship — IBM SkillsBuild</h3>
+              <p class="timeline__company">Online · IBM × AICTE × FutureSkills Prime</p>
+              <p>Focused training on AI fundamentals, machine learning workflows, ethical AI, and real-world problem-solving with AI tools.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="section__tag">Portfolio</span>
+          <h2>Projects I've built</h2>
+          <p class="section__desc">From mentor-assigned learning projects to production office systems and government dashboards.</p>
+        </div>
+
+        <!-- Filter tabs -->
+        <div class="filter-tabs reveal" role="tablist">
+          <button class="filter-tab active" data-filter="all">All</button>
+          <button class="filter-tab" data-filter="current">Current</button>
+          <button class="filter-tab" data-filter="internship">Internship</button>
+          <button class="filter-tab" data-filter="production">Production</button>
+          <button class="filter-tab" data-filter="mixa">Mixa</button>
+          <button class="filter-tab" data-filter="client">Client / Gov</button>
+          <button class="filter-tab" data-filter="college">College</button>
+        </div>
+
+        <div class="projects-grid">
+
+          <!-- FRS TB SCREENING ERP -->
+          <article class="project-card project-card--featured reveal" data-category="current production">
+            <div class="project-card__header">
+              <span class="project-card__icon">🩺</span>
+              <div class="project-card__badges">
+                <span class="badge badge--working">Currently Working</span>
+                <span class="badge badge--prod">Production</span>
+                <span class="badge">Backend</span>
+              </div>
+            </div>
+            <h3>FRS TB Screening ERP</h3>
+            <p class="project-card__type">Healthcare ERP — Tuberculosis Screening Management</p>
+            <p>Custom Frappe / ERPNext application for end-to-end TB screening — from household enumeration and health assessments to X-Ray AI analysis, sputum specimen collection, and Nikshay registry integration. I work as the <strong>backend developer</strong> on this project.</p>
+            <ul class="project-card__highlights">
+              <li>40+ custom DocTypes: Person, Household, TB Screening, Campaign, Specimen, Target Area</li>
+              <li>Mobile REST APIs for Flutter app — login, GPS-based workflows, dynamic forms</li>
+              <li>Configurable screening workflows (X-Ray via Qure AI, molecular/sputum testing)</li>
+              <li>QR code generation &amp; PDF print sheets, geospatial target area mapping</li>
+              <li>Nikshay national TB registry integration via Selenium + API</li>
+              <li>Role-based access, audit logging, programme config &amp; LGD hierarchy import</li>
+            </ul>
+            <div class="tech-stack">
+              <span>Frappe</span><span>ERPNext</span><span>Python</span><span>MariaDB</span><span>Redis</span><span>Shapely</span><span>Qure AI</span><span>DICOM</span>
+            </div>
+          </article>
+
+          <!-- EVENTIX -->
+          <article class="project-card reveal" data-category="internship">
+            <div class="project-card__header">
+              <span class="project-card__icon">🎫</span>
+              <div class="project-card__badges">
+                <span class="badge badge--deploy">Vercel</span>
+                <span class="badge">Full Stack</span>
+              </div>
+            </div>
+            <h3>Eventix</h3>
+            <p class="project-card__type">Event Booking Platform — Web + Mobile</p>
+            <p>Full-stack event booking system with shared backend across three client platforms. Features JWT auth, RBAC, seat locking with idempotency, Razorpay payments, and automated booking expiry.</p>
+            <ul class="project-card__highlights">
+              <li>React.js web SPA deployed on Vercel</li>
+              <li>React Native (Expo) cross-platform mobile app</li>
+              <li>Kotlin Android app (WebView wrapper)</li>
+              <li>Node.js + Express + MongoDB REST API</li>
+            </ul>
+            <div class="tech-stack">
+              <span>Node.js</span><span>React</span><span>React Native</span><span>Kotlin</span><span>MongoDB</span><span>Razorpay</span>
+            </div>
+          </article>
+
+          <!-- DEBUGPILOT -->
+          <article class="project-card reveal" data-category="internship">
+            <div class="project-card__header">
+              <span class="project-card__icon">🔧</span>
+              <div class="project-card__badges">
+                <span class="badge badge--deploy">Vercel</span>
+                <span class="badge">Full Stack</span>
+              </div>
+            </div>
+            <h3>DebugPilot</h3>
+            <p class="project-card__type">API Debugger &amp; Testing Tool</p>
+            <p>A Postman-like API debugger built with Next.js. Send HTTP requests, manage collections &amp; folders, share requests via links, team invites, and authentication with NextAuth.</p>
+            <ul class="project-card__highlights">
+              <li>Request builder with auth support (Bearer, API Key, Basic)</li>
+              <li>Collections, folders &amp; shareable links</li>
+              <li>Team collaboration with email invites</li>
+              <li>User auth with email verification</li>
+            </ul>
+            <div class="tech-stack">
+              <span>Next.js</span><span>TypeScript</span><span>NextAuth</span><span>Tailwind</span><span>LibSQL</span>
+            </div>
+          </article>
+
+          <!-- MARKETIQ -->
+          <article class="project-card reveal" data-category="internship">
+            <div class="project-card__header">
+              <span class="project-card__icon">🛒</span>
+              <div class="project-card__badges">
+                <span class="badge badge--deploy">Vercel</span>
+                <span class="badge badge--ai">AI/ML</span>
+              </div>
+            </div>
+            <h3>MarketIQ</h3>
+            <p class="project-card__type">AI-Powered Marketplace — Mobile + API + ML</p>
+            <p>Mobile-first marketplace for buying and selling used items with AI-assisted price prediction. Three-service architecture with React Native app, Node REST API, and Flask ML service.</p>
+            <ul class="project-card__highlights">
+              <li>React Native (Expo) mobile app</li>
+              <li>Node.js + Express + PostgreSQL + Prisma</li>
+              <li>Flask ML service for price prediction (scikit-learn)</li>
+              <li>Docker deployment with CI/CD pipeline</li>
+            </ul>
+            <div class="tech-stack">
+              <span>React Native</span><span>Node.js</span><span>PostgreSQL</span><span>Flask</span><span>scikit-learn</span><span>Docker</span>
+            </div>
+          </article>
+
+          <!-- SEATNOVA -->
+          <article class="project-card reveal" data-category="internship">
+            <div class="project-card__header">
+              <span class="project-card__icon">🏟️</span>
+              <div class="project-card__badges">
+                <span class="badge badge--deploy">Vercel</span>
+                <span class="badge">3D</span>
+              </div>
+            </div>
+            <h3>SeatNova <span class="project-card__alias">(Perplex Seat Builder)</span></h3>
+            <p class="project-card__type">Visual Venue Layout Builder</p>
+            <p>Figma-like tool for designing interactive seat maps for stadiums, concert halls, and theatres. Draw sections, configure pricing tiers, and export embeddable HTML/JS or React components.</p>
+            <ul class="project-card__highlights">
+              <li>Arc, rectangle &amp; polygon section tools</li>
+              <li>3D seat view with Three.js (right-click preview)</li>
+              <li>Export as venue.json, HTML, or React component</li>
+              <li>Supports cricket, football, concert &amp; theatre venues</li>
+            </ul>
+            <div class="tech-stack">
+              <span>React</span><span>SVG</span><span>Three.js</span><span>Zustand</span><span>Vite</span>
+            </div>
+          </article>
+
+          <!-- DIGIFLUX ASSETTRACK -->
+          <article class="project-card reveal" data-category="production">
+            <div class="project-card__header">
+              <span class="project-card__icon">💼</span>
+              <div class="project-card__badges">
+                <span class="badge badge--prod">Production</span>
+                <span class="badge">Full Stack</span>
+              </div>
+            </div>
+            <h3>Digiflux AssetTrack</h3>
+            <p class="project-card__type">IT Asset Management System — Office Production</p>
+            <p>Production-ready asset management platform built for Digiflux office. Tracks assets, assignments, maintenance, warranties, and vendors with role-based access and automated daily alerts.</p>
+            <ul class="project-card__highlights">
+              <li>Next.js 16 + TypeScript dashboard with analytics charts</li>
+              <li>Node.js backend with 32/32 API tests passed</li>
+              <li>RBAC (Admin / Manager / User), QR codes, audit logging</li>
+              <li>Deployed locally on office domain</li>
+            </ul>
+            <div class="tech-stack">
+              <span>Next.js</span><span>TypeScript</span><span>Node.js</span><span>MongoDB</span><span>Recharts</span><span>TanStack Table</span>
+            </div>
+          </article>
+
+          <!-- SCRAPING PROJECT -->
+          <article class="project-card reveal" data-category="mixa production">
+            <div class="project-card__header">
+              <span class="project-card__icon">🕷️</span>
+              <div class="project-card__badges">
+                <span class="badge badge--prod">Production</span>
+                <span class="badge">Mixa</span>
+              </div>
+            </div>
+            <h3>Multi-Platform E-Commerce Scraper</h3>
+            <p class="project-card__type">Product Data Scraping for Mixa</p>
+            <p>Concurrent Python scrapers targeting multiple fashion e-commerce platforms. Scraped product data is integrated into the Mixa platform so users can compare products across platforms and buy from their preferred store.</p>
+            <ul class="project-card__highlights">
+              <li>Platforms: OhPolly, LuxuryCloset, LevelShoes, Alo Yoga &amp; more</li>
+              <li>ThreadPoolExecutor for parallel scraping (10 workers)</li>
+              <li>JSON-LD, Selenium &amp; __NEXT_DATA__ extraction strategies</li>
+              <li>PostgreSQL integration with 15-day skip logic</li>
+            </ul>
+            <div class="tech-stack">
+              <span>Python</span><span>Selenium</span><span>PostgreSQL</span><span>Requests</span><span>JSON</span>
+            </div>
+          </article>
+
+          <!-- ZOVIO -->
+          <article class="project-card reveal" data-category="mixa">
+            <div class="project-card__header">
+              <span class="project-card__icon">👗</span>
+              <div class="project-card__badges">
+                <span class="badge">Front-end</span>
+                <span class="badge">Mixa</span>
+              </div>
+            </div>
+            <h3>Zovio E-Commerce</h3>
+            <p class="project-card__type">E-Commerce Website — Front-end Only</p>
+            <p>Modern e-commerce front-end built for Mixa platform testing. Responsive product catalog, shopping experience, and UI components built with Next.js.</p>
+            <div class="tech-stack">
+              <span>Next.js</span><span>React</span><span>Tailwind CSS</span><span>TypeScript</span>
+            </div>
+          </article>
+
+          <!-- CARTIFY -->
+          <article class="project-card reveal" data-category="mixa">
+            <div class="project-card__header">
+              <span class="project-card__icon">🛍️</span>
+              <div class="project-card__badges">
+                <span class="badge">Front-end</span>
+                <span class="badge">Mixa</span>
+              </div>
+            </div>
+            <h3>Cartify E-Commerce</h3>
+            <p class="project-card__type">E-Commerce Website — Front-end Only</p>
+            <p>Feature-rich e-commerce template customized for Mixa testing. Includes product browsing, Redux state management, Sanity CMS integration, and responsive design.</p>
+            <div class="tech-stack">
+              <span>Next.js</span><span>Redux</span><span>Sanity CMS</span><span>Tailwind</span><span>Swiper</span>
+            </div>
+          </article>
+
+          <!-- COMFYUI -->
+          <article class="project-card reveal" data-category="production">
+            <div class="project-card__header">
+              <span class="project-card__icon">🎨</span>
+              <div class="project-card__badges">
+                <span class="badge badge--ai">AI/ML</span>
+              </div>
+            </div>
+            <h3>ComfyUI Workflows</h3>
+            <p class="project-card__type">AI Image &amp; Video Generation Pipelines</p>
+            <p>Designed complete ComfyUI workflows for AI-powered image and video generation. Includes clothes conversion pipeline (Flux.2 Klein) and WAN 2.2 image-to-video generation with AWS deployment documentation.</p>
+            <ul class="project-card__highlights">
+              <li>Image: Flux.2 Klein 4B clothes converter workflow</li>
+              <li>Video: WAN 2.2 Image-to-Video (multiple quality tiers)</li>
+              <li>AWS EC2 instance requirements &amp; cost analysis documented</li>
+            </ul>
+            <div class="tech-stack">
+              <span>ComfyUI</span><span>Flux.2</span><span>WAN 2.2</span><span>AWS</span><span>Python</span>
+            </div>
+          </article>
+
+          <!-- RAILWAY DASHBOARD -->
+          <article class="project-card reveal" data-category="client">
+            <div class="project-card__header">
+              <span class="project-card__icon">🚂</span>
+              <div class="project-card__badges">
+                <span class="badge badge--gov">Government</span>
+              </div>
+            </div>
+            <h3>Railway Dashboard</h3>
+            <p class="project-card__type">Government Project — Front-end Dashboards</p>
+            <p>Front-end dashboards for Indian Railways DRM departments. Data loads dynamically from Google Sheets via API. Built separate dashboards for Finance, Mechanical, and Medical departments plus a unified dashboard.</p>
+            <ul class="project-card__highlights">
+              <li>Finance, Mechanical &amp; Medical DRM dashboards</li>
+              <li>Unified dashboard with Recharts analytics</li>
+              <li>Dynamic data from Excel/Google Sheets</li>
+              <li>React + Tailwind CSS + Capacitor for mobile</li>
+            </ul>
+            <div class="tech-stack">
+              <span>React</span><span>Tailwind</span><span>Recharts</span><span>Google Sheets API</span><span>Capacitor</span>
+            </div>
+          </article>
+
+          <!-- AI WORLD -->
+          <article class="project-card reveal" data-category="college">
+            <div class="project-card__header">
+              <span class="project-card__icon">🤖</span>
+              <div class="project-card__badges">
+                <span class="badge badge--college">College</span>
+                <span class="badge badge--ai">AI/ML</span>
+              </div>
+            </div>
+            <h3>AI World — Gesture Control</h3>
+            <p class="project-card__type">Gesture-Based AI Control System — Group Project</p>
+            <p>AI-powered software enabling hands-free computer control using webcam-captured hand gestures. Real-time hand tracking with virtual mouse control and system volume adjustments.</p>
+            <ul class="project-card__highlights">
+              <li>Real-time hand tracking &amp; gesture recognition</li>
+              <li>Virtual mouse control via webcam</li>
+              <li>System volume adjustment through gestures</li>
+            </ul>
+            <div class="tech-stack">
+              <span>Python</span><span>OpenCV</span><span>MediaPipe</span><span>NumPy</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section section--alt" id="skills">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="section__tag">Skills</span>
+          <h2>Technologies I work with</h2>
+        </div>
+        <div class="skills-grid reveal">
+          <div class="skill-group">
+            <h3>Languages</h3>
+            <div class="skill-tags">
+              <span>Python</span><span>JavaScript</span><span>TypeScript</span><span>Java</span><span>Kotlin</span><span>C</span><span>C++</span><span>HTML5</span><span>CSS</span><span>PHP</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <h3>Frontend &amp; Mobile</h3>
+            <div class="skill-tags">
+              <span>React.js</span><span>Next.js</span><span>React Native</span><span>Tailwind CSS</span><span>Three.js</span><span>Framer Motion</span><span>Expo</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <h3>Backend &amp; APIs</h3>
+            <div class="skill-tags">
+              <span>Node.js</span><span>Express.js</span><span>Flask</span><span>Frappe Framework</span><span>ERPNext</span><span>REST API</span><span>JWT</span><span>RBAC</span><span>Prisma</span><span>Mongoose</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <h3>Databases &amp; DevOps</h3>
+            <div class="skill-tags">
+              <span>MongoDB</span><span>PostgreSQL</span><span>MariaDB</span><span>Redis</span><span>SQLite</span><span>Git</span><span>GitHub</span><span>GitLab</span><span>Vercel</span><span>Docker</span><span>Postman</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <h3>AI / ML</h3>
+            <div class="skill-tags">
+              <span>NumPy</span><span>Pandas</span><span>Scikit-learn</span><span>TensorFlow</span><span>Keras</span><span>OpenCV</span><span>MediaPipe</span><span>ComfyUI</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <h3>Concepts &amp; Soft Skills</h3>
+            <div class="skill-tags">
+              <span>Neural Networks</span><span>CNN</span><span>Deep Learning</span><span>Web Scraping</span><span>Problem Solving</span><span>Teamwork</span><span>Leadership</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section class="section" id="education">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="section__tag">Education</span>
+          <h2>Academic background</h2>
+        </div>
+        <div class="edu-grid reveal">
+          <article class="edu-card">
+            <div class="edu-card__year">2023 — 2026</div>
+            <h3>B.E. Computer Science &amp; Design</h3>
+            <p class="edu-card__inst">Sardar Vallabhbhai Patel Institute of Technology, Vasad (GTU)</p>
+            <div class="edu-card__grades">
+              <span>CGPA: <strong>8.29</strong></span>
+              <span>CPI: <strong>7.74</strong></span>
+            </div>
+          </article>
+          <article class="edu-card">
+            <div class="edu-card__year">2020 — 2023</div>
+            <h3>Diploma — Information Technology</h3>
+            <p class="edu-card__inst">Sigma the Group of Institutes (GTU)</p>
+            <div class="edu-card__grades">
+              <span>CGPA: <strong>7.57</strong></span>
+              <span>CPI: <strong>8.07</strong></span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section section--contact" id="contact">
+      <div class="container">
+        <div class="contact-box reveal">
+          <div class="contact-box__content">
+            <span class="section__tag">Contact</span>
+            <h2>Let's connect</h2>
+            <p>Open to collaborations, opportunities, and interesting projects. Feel free to reach out!</p>
+            <div class="resume-download reveal">
+              <div class="resume-download__info">
+                <strong>Download my resume</strong>
+                <span>Updated PDF with experience, projects, and skills</span>
+              </div>
+              <div class="resume-download__actions">
+                <a href="Devakkumar_Sheth_Resume.pdf" class="btn btn--resume js-download-resume">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                  Download PDF
+                </a>
+                <a href="resume.html" target="_blank" class="btn btn--ghost">View Online</a>
+              </div>
+            </div>
+            <div class="contact-links">
+              <a href="tel:+919408999494" class="contact-link">
+                <span class="contact-link__icon">📞</span>
+                <div>
+                  <strong>Phone</strong>
+                  <span>+91 9408999494</span>
+                </div>
+              </a>
+              <a href="mailto:223csd11@svitvasad.ac.in" class="contact-link">
+                <span class="contact-link__icon">✉️</span>
+                <div>
+                  <strong>Email</strong>
+                  <span>223csd11@svitvasad.ac.in</span>
+                </div>
+              </a>
+              <a href="https://github.com/Shethdevak" target="_blank" rel="noopener" class="contact-link">
+                <span class="contact-link__icon">🔗</span>
+                <div>
+                  <strong>GitHub</strong>
+                  <span>github.com/Shethdevak</span>
+                </div>
+              </a>
+              <a href="https://www.linkedin.com/in/devakkumar-sheth-7159313a0" target="_blank" rel="noopener" class="contact-link">
+                <span class="contact-link__icon contact-link__icon--linkedin">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 114.126 0 2.063 2.063 0 01-2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                </span>
+                <div>
+                  <strong>LinkedIn</strong>
+                  <span>linkedin.com/in/devakkumar-sheth-7159313a0</span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>&copy; 2026 Devakkumar Sheth. Built with HTML, CSS &amp; passion.</p>
+      <a href="#hero" class="footer__top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
