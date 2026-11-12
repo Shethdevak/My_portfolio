@@ -59,7 +59,7 @@ pdf.set_font("Helvetica", "B", 11)
 pdf.set_text_color(99, 102, 241)
 pdf.cell(0, 6, "Associated Software Developer | Backend", new_x="LMARGIN", new_y="NEXT")
 
-pdf.para("+91 9408999494 | 223csd11@svitvasad.ac.in | Vadodara, Gujarat", 8.5, 4.5)
+pdf.para("+91 9408999494 | devaksheth@gmail.com | Vadodara, Gujarat", 8.5, 4.5)
 pdf.para("github.com/Shethdevak | linkedin.com/in/devakkumar-sheth-7159313a0", 8.5, 4.5)
 pdf.ln(2)
 pdf.set_draw_color(99, 102, 241)

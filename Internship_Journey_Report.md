@@ -94,5 +94,5 @@ Thank you for your support throughout this journey. I look forward to continuing
 **Devakkumar Sheth**  
 Associated Software Developer (Backend)  
 Digiflux Technologies Private Limited  
-📞 +91 9408999494 | ✉️ 223csd11@svitvasad.ac.in  
+📞 +91 9408999494 | ✉️ devaksheth@gmail.com  
 🔗 [LinkedIn](https://www.linkedin.com/in/devakkumar-sheth-7159313a0) | [GitHub](https://github.com/Shethdevak)
